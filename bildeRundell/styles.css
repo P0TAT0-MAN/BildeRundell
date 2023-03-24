@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* bilde */
+
+img {
+    position: absolute;
+    margin-bottom: -100vh;
+    border-radius: 10px;
+    height: auto;
+    width: 55vw;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.flash {
+    background-color: #ff5177;
+    animation: flash 0.3s ease-in-out;
+  }
+
+  @keyframes flash {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* piler */
+
+.arrowGrid {
+    position: absolute;
+    margin-top: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'left right'
+    ;
+    grid-gap: 53vw;
+}
+
+#left {
+    grid-area: left;
+}
+
+#right {
+    grid-area: right;
+}
+
+i {
+    font-size: 8vw;
+    color: rgb(233, 233, 233);
+    text-shadow: 0 0 5px #ff5177, 0 0 10px #ff5177, 0 0 15px #ff5177, 0 0 20px #ff5177;
+    transition: all 0.4s;
+}
+
+i:hover {
+    color: #ffffff;
+    scale: 1.1;
+    text-shadow: 0 0 10px #ff5177, 0 0 20px #ff5177, 0 0 30px #ff5177, 0 0 40px #ff5177, 0 0 50px #ff5177, 0 0 60px #ff5177, 0 0 70px #ff5177;
+}
